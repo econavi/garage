@@ -1,0 +1,36 @@
+extends ../templates/default/template.pug
+
+block head
+	- var path = '';
+	- var pageTitle = 'Главная страница';
+	- var pageDescription = 'Описание главной страницы';
+
+block content
+	main.page-main
+		.container
+			h1.page-main__title Константиновский многофункциональный комплекс
+			p.page-main__subtitle Аренда помещений для вашего бизнеса
+		
+			.page-main__banner
+				p.page-main__banner-text Помещения от 4 кв.м<br>Ставка от 1900 руб за 1 кв.м
+				a.page-main__banner-link.button(href='javascript:void(0)') подробнее
+
+		.page-main__text
+			.container
+				p.text Бизнес-центр &laquo;Алексеевская Башня&raquo;&nbsp;&mdash; новое офисное здание класса &laquo;В+&raquo; общей площадью 41&nbsp;380&nbsp;м2, расположенное в&nbsp;Северо-Восточном округе Москвы. Значительная часть здания представляет собой &laquo;сегмент круга&raquo; и&nbsp;имеет панорамные окна, открывающие восхитительный вид на&nbsp;Всероссийский Выставочный Центр.
+
+				p.text Останкинскую башню, гостиницу &laquo;Космос&raquo;. Надземная часть здания представляет собой композицию из&nbsp;башни, расположенной на&nbsp;3-х этажном стилобате. Этажность здания&nbsp;&mdash; 18&nbsp;надземных этажей и&nbsp;4&nbsp;подземных этажа.
+		
+		.page-main__advantages
+			.container
+				.page-main__advantages-title-wrap
+					h2.page-main__advantages-title.title Наши преимущества
+				include ../../blocks/advantages/advantages.pug
+		
+		.page-main__feedback
+			.container
+				.page-main__feedback-title
+					p.title Отправьте заявку<br>на консультацию
+				.page-main__feedback-subtitle
+					p.title Менеджеры оперативно свяжуться<br>с Вами в рабочее время
+				include ../../blocks/feedback/feedback.pug

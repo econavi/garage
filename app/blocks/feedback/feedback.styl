@@ -1,0 +1,31 @@
+.feedback
+	text-align center
+	&__input
+		width 100%
+		padding 10px
+		margin-bottom 15px
+		resize none
+		
+		font-size 16.2px
+		line-height 1.23
+		text-align center
+		
+		color $mainColor
+		background none
+		border 2px solid $mainColor
+		border-radius 0
+		
+		&::placeholder
+			color rgba($mainColor, 0.5)
+		
+		&:focus::placeholder
+			color transparent
+		
+		&_big
+			min-height 160px
+		
+	&__submit
+		font-size 13.5px
+		line-height 1.25
+		
+		color $mainColor

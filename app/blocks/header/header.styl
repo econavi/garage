@@ -1,0 +1,195 @@
+.header
+	&__nav
+		position relative
+		width 100%
+		margin-bottom 40px
+		background linear-gradient($navBgColorTop, $navBgColorBottom)
+	
+	&__control
+		display flex
+		justify-content space-between
+
+	&__menu-switcher
+		$font-size = 1.62rem
+		$text-color = $secondColor
+		$icon-color = $secondColor
+		
+		position relative
+		
+		margin 0
+		padding 0
+		padding-left 1.5em
+		z-index 1
+		
+		font-family 'Roboto Condensed'
+		font-size $font-size
+		font-weight bold
+		line-height 1
+		text-transform uppercase
+		
+		color $text-color
+		border 0
+		background none
+		
+		cursor pointer
+		
+		&::before
+			content ''
+			position absolute
+			top 50%
+			left 0
+			
+			display block
+			width 1em
+			height 0.18em
+			
+			background $icon-color
+			
+			transform translateY(-60%)
+			box-shadow 0 0.3em $icon-color, 0 -0.3em $icon-color
+		
+		&_opend
+			&::before,
+			&::after
+				content ''
+				position absolute
+				top 50%
+				left 0
+				
+				display block
+				width 1em
+				height 0.20em
+				
+				background $icon-color
+				box-shadow none
+			
+			&::before
+				transform translateY(-60%) rotate(45deg)
+			
+			&::after
+				transform translateY(-60%) rotate(-45deg)
+
+	
+	&__menu
+		position absolute
+		
+		display none
+		width 100%
+		padding-bottom 40px
+		
+		background #000
+		
+		&_opend
+			display block
+
+	&__search-switcher
+		$icon-width = 3px
+		$icon-color = $gray
+		
+		position relative
+		
+		display block
+		width 50px
+		height 50px
+		padding 0
+		margin 0
+		z-index 1
+		
+		border 0
+		background none
+		
+		cursor pointer
+
+		&::before
+			content ''
+			position absolute
+			top 25%
+			right 12%
+			
+			width 34%
+			height 34%
+			
+			border $icon-width solid $icon-color
+			border-radius 50%
+			
+		&::after
+			content ''
+			position absolute
+			
+			right 0
+			bottom 36%
+			
+			width 22%
+			height $icon-width
+			
+			background $icon-color
+			
+			transform rotate(45deg)
+		
+		&_opend
+			&::before,
+			&::after
+				content ''
+				position absolute
+				top 50%
+				right 0
+				
+				width 40%
+				height $icon-width
+				
+				background $icon-color
+				border none
+				border-radius 0
+			
+			&::before
+				transform translateY(-50%) rotate(45deg)
+			
+			&::after
+				transform translateY(-50%) rotate(-45deg)
+	
+	&__search
+		position absolute
+		display none
+		width 100%
+		margin 0 auto
+		padding 20px 0 40px 0
+		text-align center
+		background #000
+		
+		&_opend
+			display block
+	
+	&__logo
+		width 155px
+		height 70px
+		margin 0 auto
+		margin-bottom 45px
+	
+	&__contacts
+		color $secondColor
+		text-align center
+	
+	&__contacts-tel
+		font-size 23.33px
+		line-height 1.25
+	
+	&__contacts-address
+		font-size 16.2px
+		line-height 19.2px
+
+// if no javascript
+.no-js .header
+	&__control
+		display none
+	
+	&__menu
+		position static
+		
+		display block
+		padding-bottom 0
+	
+	&__search
+		position static
+		
+		display block
+		padding-bottom 20px

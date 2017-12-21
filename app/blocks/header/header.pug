@@ -1,0 +1,23 @@
+header.header
+	.header__nav
+
+		.header__control.container
+			button(type='button').header__menu-switcher Меню
+			
+			button(type='button' aria-label='Поиск').header__search-switcher
+					
+		.header__menu
+			include ../main-menu/main-menu.pug
+
+		.header__search
+			.container
+				include ../search-form/search-form.pug
+
+	.header__logo
+		include ../logo/logo.pug
+
+	.header__contacts
+		.header__contacts-tel
+			include ../tel/tel.pug
+		.header__contacts-address
+			include ../address/address.pug

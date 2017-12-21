@@ -1,0 +1,78 @@
+.body
+	margin 0
+	padding 0
+
+	// font-family 'Roboto Condensed', Arial, 'Helvetica CY', sans-serif
+	font-family 'Roboto Condensed'
+	
+	color #fff
+	background-color #0c1119
+
+	&::after
+		content ''
+		position fixed
+		left 0
+		right 0
+		top 0
+		bottom 0
+		z-index -9000
+		
+		background rgba(0,0,0,0.6)
+
+	&::before
+		content ''
+		position fixed
+		left 0
+		right 0
+		top 0
+		bottom 0
+		z-index -10000
+
+		background url($pathToTemplateImages + 'main-bg-320x568.jpg')
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		
+		// 321px -> 767px
+		+above('s')
+			background-image url($pathToTemplateImages + 'main-bg-768x432.jpg')
+	
+		+above('s', orientation: portrait)
+			background-image url($pathToTemplateImages + 'main-bg-600x1024.jpg')
+	
+		// 768px -> 1023px
+		+above('m')
+			background-image url($pathToTemplateImages + 'main-bg-1024x768.jpg')
+		
+		+above('m', orientation: portrait)
+			background-image url($pathToTemplateImages + 'main-bg-800x1280.jpg')
+	
+		// 1024px -> 1279px
+		+above('l')
+			background-image url($pathToTemplateImages + 'main-bg-1280x800.jpg')
+		
+		+above('l', orientation: portrait)
+			background-image url($pathToTemplateImages + 'main-bg-1280x1366.jpg')
+	
+		// 1280px -> 1599px
+		+above('xl')
+			background-image url($pathToTemplateImages + 'main-bg-1600x900.jpg')
+		
+		// 1600px -> ...
+		+above('xxl')
+			background-image url($pathToTemplateImages + 'main-bg-1920x1080.jpg')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
