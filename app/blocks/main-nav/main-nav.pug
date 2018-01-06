@@ -1,0 +1,14 @@
+.main-nav
+	.container
+		.main-nav__control
+			.main-nav__menu-switcher
+				button.menu-switcher(type='button') Меню
+			.main-nav__search-switcher
+				button.search-switcher(type='button' aria-label='Поиск')
+
+		.main-nav__menu
+			include ../main-menu/main-menu.pug
+
+	.main-nav__search
+		.container
+			include ../search-form/search-form.pug

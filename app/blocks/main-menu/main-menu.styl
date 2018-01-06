@@ -14,13 +14,32 @@
 		
 		&:first-child
 			border-top 1px solid lighten($navBgColorTop, 3%)
+		
+		+above('m')
+			display inline-block
+			
+			text-transform uppercase
+			
+			border none
 
 	&__link
 		display block
-		padding 10px 0 10px 0
+		padding 10px 0
 
 		font-size 1.62rem
 		line-height 1.25
 		
 		text-decoration none
 		color $secondColor
+		
+		&_active
+			color $mainColor
+		
+		+above('m')
+			padding 15px 10px
+			
+			&:hover
+				color $mainColor
+			
+			&:active
+				color $secondColor

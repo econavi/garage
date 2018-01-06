@@ -1,0 +1,70 @@
+.main-nav
+	position relative
+	width 100%
+	
+	&__control
+		display flex
+		justify-content space-between
+		
+		+above('m')
+			float right
+
+	&__menu-switcher
+		+above('m')
+			display none
+
+	&__menu
+		position absolute
+		right 0
+		left 0
+		
+		display none
+		padding-bottom 40px
+		
+		background $navBgColorBottom
+		
+		&_opend
+			display block
+		
+		+above('m')
+			position static
+			
+			display block
+			padding 0
+			
+			background none
+			
+	
+	&__search
+		position absolute
+		right 0
+		left 0
+		
+		display none
+		width 100%
+		// padding $fieldsOfMainContainer
+		padding-top 20px 
+		padding-bottom 40px
+		
+		background $navBgColorBottom
+		
+		&_opend
+			display block
+
+
+// if no javascript
+.no-js .main-nav
+	&__control
+		display none
+	
+	&__menu
+		position static
+		
+		display block
+		padding-bottom 0
+	
+	&__search
+		position static
+		
+		display block
+		padding-bottom 20px

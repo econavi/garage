@@ -1,0 +1,59 @@
+.menu-switcher
+	$font-size = 1.62rem
+	$text-color = $secondColor
+	$icon-color = $secondColor
+	
+	position relative
+	
+	margin 0
+	padding 1em 0
+	padding-left 1.5em
+	z-index 1
+	
+	font-family $fontFamily
+	font-size $font-size
+	font-weight bold
+	line-height 1
+	text-transform uppercase
+	
+	color $text-color
+	border 0
+	background none
+	
+	cursor pointer
+	
+	&::before
+		content ''
+		position absolute
+		top 50%
+		left 0
+		
+		display block
+		width 1em
+		height 0.18em
+		
+		background $icon-color
+		
+		transform translateY(-60%)
+		box-shadow 0 0.3em $icon-color, 0 -0.3em $icon-color
+	
+	&_opend
+		&::before,
+		&::after
+			content ''
+			position absolute
+			top 50%
+			left 0
+			
+			display block
+			width 1em
+			height 0.20em
+			
+			background $icon-color
+			box-shadow none
+		
+		&::before
+			transform translateY(-60%) rotate(45deg)
+		
+		&::after
+			transform translateY(-60%) rotate(-45deg)
