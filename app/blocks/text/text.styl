@@ -1,9 +1,18 @@
+$color-text = $color-secondary
+
 .text
-	padding 0
-	margin 0
-	margin-bottom 20px
+	margin-bottom 6%
 	
-	font-size 13.5px
-	line-height 1.25
+	font-size $font-size-xxs
+	line-height $line-height-default5
 	
-	color $darkColor
+	color $color-text
+
+	+above('media-m')
+		margin-bottom 2%
+	
+	+above('media-l')
+		font-size $font-size-xs
+	
+	+above('media-xxl')
+		font-size $font-size-s

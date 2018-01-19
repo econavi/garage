@@ -1,0 +1,27 @@
+$color-bunner__text = $color-brand
+$color-bunner__link = $color-default
+
+.banner
+	text-align center
+	
+	&__text
+		margin-bottom $space-xxs
+		
+		font-size $font-size-xxs
+		line-height $line-height-default-x
+		text-transform uppercase
+		
+		color $color-bunner__text
+		
+		+above('media-m')
+			margin-bottom $space-xs
+			font-size $font-size-s
+		
+		+above('media-l')
+			font-size $font-size-m
+		
+		+above('media-xxl')
+			font-size $font-size-l
+
+	&__link
+		color $color-bunner__link

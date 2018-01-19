@@ -1,6 +1,14 @@
-.subtitle
-	margin 0
-	padding 0
+.subtitle	
+	font-size $font-size-xxxs
+	line-height $line-height-default5
+	font-weight 400
 	
-	font-size 13.5px
-	line-height 1.25
+	+above('media-m')
+		font-size $font-size-xs
+
+	+above('media-l')
+		font-size $font-size-s
+
+	+above('media-xxl')
+		font-size $font-size-m
+	

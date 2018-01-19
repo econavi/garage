@@ -1,3 +1,5 @@
+$search-form__input-color = $gray-dark
+
 .search-form
 	position relative
 	
@@ -8,16 +10,13 @@
 		padding 3px 30px 3px 15px
 
 		font-family inherit
-		font-size 1.6rem
+		font-size $font-size-xxs
 		
 		color #fff
-		background #20222c
+		background $search-form__input-color
 		border none
 		border-radius 25px
 		outline none
-		
-		&:focus
-			border 3px solid #1B61AC
 	
 	&__submit
 		position absolute

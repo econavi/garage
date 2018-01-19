@@ -1,0 +1,51 @@
+$color-cards = rgba($gray, 0.7)
+
+.cards
+	list-style none
+	
+	row-flex()
+	justify-content center
+
+	&__item
+		col()
+		size(12)
+
+		min-height 92px
+		padding 7.4%
+		margin-bottom $space-xxxs
+		
+		background $color-cards
+		
+		+above('media-m')
+			size(6)
+			margin-bottom $space-xxs
+			padding 3.5%
+
+		+above('media-l')
+			size(4)
+			padding 2.6%
+			
+		+above('media-xl')
+			padding 2%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

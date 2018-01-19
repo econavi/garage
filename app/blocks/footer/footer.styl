@@ -1,26 +1,36 @@
+$color-footer = $color-primary
+$color-footer__tel = $color-brand
+$color-footer__address = $color-default
+
 .footer
-	padding 52px 0 20px 0
+	margin-top $space-xxl
+	padding-top $space-l
+	padding-bottom $space-xxs
 	
-	font-size 16.2px
-	line-height 1.25
 	text-align center
 	
-	background #000
+	background $color-footer
+	
+	+above('media-m')
+		margin-top $space-xxxl
+		padding-top $space-xl
+
+	+above('media-xxl')
+		margin-top $space-xxxxl
 	
 	&__contacts
-		margin-bottom 74px
+		margin-bottom $space-xl
 
 	&__contacts-item
-		margin-bottom 12px
-		
-		&_tel
-			color $secondColor
-		
-		&_address
-			color $mainColor
+		margin-bottom $space-xxxxs
 	
 	&__copyright
-		font-size 13.5px
-		line-height 1.25
+		font-size $font-size-xxxs
+		line-height $line-height-default5
+		
 		color #555
+
+		+above('media-xxl')
+			font-size $font-size-xxs
+		
 		

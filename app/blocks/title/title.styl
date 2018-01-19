@@ -1,9 +1,33 @@
-.title
-	margin 0
-	padding 0
-	
+$color-title-default = $color-brand
+$color-title-white = $color-default
+
+.title	
+	font-size $font-size-s
+	line-height $line-height-default5
 	font-weight 400
 	
-	&_h1
-		font-size 23.33px
-		line-height 1.25
+	color $color-title-default
+	
+	+above('media-m')
+		font-size $font-size-l
+
+	+above('media-l')
+		font-size $font-size-xl
+
+	+above('media-xxl')
+		font-size $font-size-xxl
+	
+	&_size_big
+		font-size $font-size-m
+		
+		+above('media-m')
+			font-size $font-size-xl
+
+		+above('media-l')
+			font-size $font-size-xxxl
+
+		+above('media-xxl')
+			font-size $font-size-xxxxl
+	
+	&_color_white
+		color $color-title-white

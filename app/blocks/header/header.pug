@@ -1,13 +1,13 @@
 header.header
-	.header__nav
+	.header__top
 		include ../main-nav/main-nav.pug
 
-	.container
-		.header__logo
+	.header__bottom.container
+		a.header__logo(href='/')
 			include ../logo/logo.pug
 
-		.header__contacts
-			.header__tel
+		ul.header__contacts.contacts-list
+			li.contacts-list__item.contacts-list__item_big-text
 				include ../tel/tel.pug
-			.header__address
+			li.contacts-list__item
 				include ../address/address.pug

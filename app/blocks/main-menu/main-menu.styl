@@ -1,21 +1,22 @@
+$color-main-menu__item-border = lighten($color-secondary, 3%)
+$color-main-menu__link = $color-brand
+$color-main-menu__link-hover = $color-default
+
 .main-menu
 
 	&__list
-		margin 0
-		padding 0
-
 		list-style none
 	
 	&__item
 		line-height 0
 		text-align center
+	
+		border-bottom 1px solid $color-main-menu__item-border
 		
-		border-bottom 1px solid lighten($navBgColorTop, 3%)
+		&:first-chil
+			border-top 1px solid $color-main-menu__item-border
 		
-		&:first-child
-			border-top 1px solid lighten($navBgColorTop, 3%)
-		
-		+above('m')
+		+above('media-m')
 			display inline-block
 			
 			text-transform uppercase
@@ -26,20 +27,28 @@
 		display block
 		padding 10px 0
 
-		font-size 1.62rem
-		line-height 1.25
+		font-size $font-size-xxs
+		line-height $line-height-default-x
 		
 		text-decoration none
-		color $secondColor
+		color $color-main-menu__link
 		
-		&_active
-			color $mainColor
-		
-		+above('m')
+		+above('media-m')
 			padding 15px 10px
-			
+
 			&:hover
-				color $mainColor
+				color $color-main-menu__link-hover
 			
 			&:active
-				color $secondColor
+				color $color-main-menu__link
+		
+		+above('media-xxl')
+			font-size $font-size-s
+		
+		&_active
+			color $color-main-menu__link-hover
+
+	&__item:first-child &__link
+		padding-left 0
+
+	

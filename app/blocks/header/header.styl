@@ -1,22 +1,54 @@
+$color-header-top = $color-secondary
+$color-header-bottom = $color-primary
+
 .header
-	&__nav
-		background linear-gradient($navBgColorTop, $navBgColorBottom)
-		margin-bottom 40px
+	margin-bottom $space-m
 	
+	+above('media-m')
+		margin-bottom $space-xxl
+	
+	+above('media-xxl')
+		margin-bottom $space-xxxxl
+
+	&__top
+		background linear-gradient($color-header-top, $color-header-bottom)
+		margin-bottom $space-l
+		
+		+above('media-l')
+			margin-bottom $space-xl
+		
+		+above('media-xxl')
+			margin-bottom $space-xxl
+	
+	&__bottom
+		+above('media-m')
+			display flex
+			justify-content space-between
+			align-items flex-end
+
 	&__logo
+		display block
 		width 155px
 		height 70px
 		margin 0 auto
-		margin-bottom 45px
+		margin-bottom $space-m
+		
+		+above('media-m')
+			width 188px
+			height 82px
+			margin 0
+			
+		+above('media-l')
+			width 244px
+			height 105px
+			
+		+above('media-l')
+			width 282px
+			height 122px
 	
 	&__contacts
-		color $secondColor
 		text-align center
-	
-	&__tel
-		font-size 23.33px
-		line-height 1.25
-	
-	&__address
-		font-size 16.2px
-		line-height 19.2px
+		
+		+above('media-m')
+			text-align right
+

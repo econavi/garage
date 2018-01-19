@@ -1,0 +1,34 @@
+$color-contacts-1 = $color-brand
+$color-contacts-2 = $color-default
+
+.contacts-list
+	color $color-contacts-1
+	list-style none
+
+	&__item
+		font-size $font-size-xxs
+		line-height $line-height-default5
+		
+		+above('media-m')
+			font-size $font-size-xs
+
+		+above('media-l')
+			font-size $font-size-s
+		
+		&_big-text
+			font-size $font-size-s
+			
+			+above('media-m')
+				font-size $font-size-l
+
+			+above('media-l')
+				font-size $font-size-xl
+
+			+above('media-xxl')
+				font-size $font-size-xxl
+		
+		&_color_white
+			color $color-contacts-2
+		
+
+

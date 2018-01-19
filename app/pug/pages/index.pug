@@ -6,31 +6,37 @@ block head
 	- var pageDescription = 'Описание главной страницы';
 
 block content
-	main.page-main
-		.container
-			h1.page-main__title Константиновский многофункциональный комплекс
-			p.page-main__subtitle Аренда помещений для вашего бизнеса
-		
-			.page-main__banner
-				p.page-main__banner-text Помещения от 4 кв.м<br>Ставка от 1900 руб за 1 кв.м
-				a.page-main__banner-link.button(href='javascript:void(0)') подробнее
+	main.content
+		.content__item
+			.container
+				.title-container
+					h1.title-container__item.title.title_size_big.title_color_white Константиновский<br>многофункциональный комплекс				
+					p.slogan Аренда помещений для вашего бизнеса
 
-		.page-main__text
+		.content__item
+			.container
+				include ../../blocks/banner/banner.pug
+
+		.content__item.text-container
 			.container
 				p.text Бизнес-центр &laquo;Алексеевская Башня&raquo;&nbsp;&mdash; новое офисное здание класса &laquo;В+&raquo; общей площадью 41&nbsp;380&nbsp;м2, расположенное в&nbsp;Северо-Восточном округе Москвы. Значительная часть здания представляет собой &laquo;сегмент круга&raquo; и&nbsp;имеет панорамные окна, открывающие восхитительный вид на&nbsp;Всероссийский Выставочный Центр.
 
 				p.text Останкинскую башню, гостиницу &laquo;Космос&raquo;. Надземная часть здания представляет собой композицию из&nbsp;башни, расположенной на&nbsp;3-х этажном стилобате. Этажность здания&nbsp;&mdash; 18&nbsp;надземных этажей и&nbsp;4&nbsp;подземных этажа.
-		
-		.page-main__advantages
+
+		.content__item
 			.container
-				.page-main__advantages-title
-					h2.title.title_h1 Наши преимущества
-				include ../../blocks/advantages/advantages.pug
-		
-		.page-main__feedback
-			.container
-				.page-main__feedback-title
-					p.title.title_h1 Отправьте заявку<br>на консультацию
-				.page-main__feedback-subtitle
-					p.subtitle Менеджеры оперативно свяжуться<br>с Вами в рабочее время
-				include ../../blocks/feedback/feedback.pug
+				.title-container
+					h2.title Наши преимущества
+				ul.cards
+					li.cards__item.card-content
+						.card-content__title Более 40&nbsp;000&nbsp;м2 сдаваемых площадей
+					li.cards__item.card-content
+						.card-content__title Развитая инфраструктура
+					li.cards__item.card-content
+						.card-content__title Три этажа подземного паркинга
+					li.cards__item.card-content
+						.card-content__title Расположен в&nbsp;самом &laquo;сердце&raquo; столицы
+					li.cards__item.card-content
+						.card-content__title Свободная планировка помещений
+					li.cards__item.card-content
+						.card-content__title Безопасная пропускная система

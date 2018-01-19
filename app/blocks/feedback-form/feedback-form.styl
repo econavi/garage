@@ -1,0 +1,67 @@
+$color-feedback-form__title = $color-brand
+$color-feedback-form__subtitle = $color-default
+$color-feedback-form__submit = $color-default
+$color-feedback-form__input = $color-default
+$color-feedback-form__input-border = $color-default
+$color-feedback-form__input-placeholder = rgba($color-default, 0.5)
+
+.feedback-form
+	text-align center
+
+	&__user-data-inputs
+		+above('media-l')
+			row-flex()
+
+	&__input
+		width 100%
+		padding $space-xxxxs
+		margin-bottom $space-xxs
+		resize none
+		
+		font-size $font-size-xxs
+		line-height $line-height-default-xx
+		text-align center
+		
+		color $color-feedback-form__input
+		background none
+		border 2px solid $color-feedback-form__input-border
+		border-radius 0
+		
+		&::placeholder
+			color $color-feedback-form__input-placeholder
+		
+		&:focus::placeholder
+			color transparent
+		
+		&_user-data
+			+above('media-l')
+				col()
+				size(4)
+
+		&_user-message
+			min-height 165.4296px
+			margin-bottom xxxs
+			
+			+above('media-m')
+				margin-bottom $space-xxs
+			
+			+above('media-l')
+				margin-bottom $space-xs
+			
+			+above('media-xxl')
+				margin-bottom $space-s
+		
+	&__submit
+		color $color-feedback-form__submit
+
+
+
+
+
+
+
+
+
+
+
+
