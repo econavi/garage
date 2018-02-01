@@ -1,0 +1,30 @@
+.product-gallery
+	display flex
+	flex-wrap wrap
+	
+	+above('media-l')
+		width 300px
+	
+	&__item
+		display flex
+		align-items center
+		
+		width 110px
+		height 110px
+		margin-right $space-xxxs
+		margin-bottom $space-xxxs
+		
+		border 2px solid $color-default
+		
+		&:hover
+			border 2px solid $color-brand
+			cursor pointer
+			transform scale($scale-hover-default)
+			transition transform $transition-default
+		
+		&:active
+			border 1px solid $color-default
+		
+		+above('media-m')
+			width 130px
+			height 130px

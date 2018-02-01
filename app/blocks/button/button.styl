@@ -6,10 +6,11 @@ $color-button-hover = $color-brand
 	
 	font inherit
 	font-size $font-size-xxxs
-	line-height $line-height-default5
+	line-height $line-height-default-x
 	text-decoration none
 	text-transform uppercase
 	
+	color inherit
 	border none
 	border-radius 50px
 	background $color-button
@@ -27,7 +28,7 @@ $color-button-hover = $color-brand
 
 	
 	&:hover
-		box-shadow 0 0 0 1px $color-button-hover
+		box-shadow $box-shadow-hover
 	
 	&:active
 		box-shadow none

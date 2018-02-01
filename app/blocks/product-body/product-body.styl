@@ -1,0 +1,19 @@
+.product-body
+	display flex
+	flex-direction column
+	
+	+above('media-l')
+		flex-direction row
+		justify-content space-between
+
+	&__section
+		margin-bottom $space-xxxs
+		
+		&:last-child
+			margin-bottom 0
+			
+		+above('media-m')
+			margin-bottom $space-xs
+		
+		+above('media-l')
+			margin-bottom 0

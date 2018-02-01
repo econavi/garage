@@ -1,7 +1,18 @@
+$color-card-content = $color-default
+
 .card-content
+	display block
+	width 100%
+	height 100%
+	padding $space-s
+	
+	text-decoration none
+	
+	color $color-card-content
+	
 	&__title
 		font-size $font-size-xs
-		line-height $line-height-default5
+		line-height $line-height-default-x
 		letter-spacing 0.5px
 		text-align left
 
@@ -11,5 +22,3 @@
 		+above('media-l')
 			text-align center
 
-		+above('media-xxl')
-			font-size $font-size-m

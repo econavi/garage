@@ -1,0 +1,22 @@
+.product-header
+	width 100%
+	border-collapse collapse
+	
+	&__row
+		display flex
+		justify-content space-between
+	
+	&__cell
+		padding $space-xxxxs 0
+		
+		+above('media-m')
+			padding $space-xxs 0
+
+		+above('media-xxl')
+			padding $space-xs 0
+
+		&:last-child
+			display none
+		
+			+above('media-m')
+				display block

@@ -1,17 +1,14 @@
 $color-cards = rgba($gray, 0.7)
 
 .cards
-	list-style none
-	
 	row-flex()
-	justify-content center
+	list-style none
 
 	&__item
+		display block
 		col()
 		size(12)
-
 		min-height 92px
-		padding 7.4%
 		margin-bottom $space-xxxs
 		
 		background $color-cards
@@ -19,14 +16,20 @@ $color-cards = rgba($gray, 0.7)
 		+above('media-m')
 			size(6)
 			margin-bottom $space-xxs
-			padding 3.5%
 
 		+above('media-l')
 			size(4)
-			padding 2.6%
+			min-height 116px
+		
+		&_link
+			&:hover
+				box-shadow $box-shadow-hover
+				transform scale($scale-hover-default)
+				transition transform $transition-default
 			
-		+above('media-xl')
-			padding 2%
+			&:active
+				box-shadow none
+
 
 
 

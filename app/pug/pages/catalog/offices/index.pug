@@ -1,0 +1,69 @@
+extends ../../../templates/default/template.pug
+
+block head
+	- var path = '../../';
+	- var pageTitle = 'Раздел второго уровня';
+	- var pageDescription = 'Описание раздела второго уровня';
+
+block content
+	main.content
+		.content__item
+			.container
+				.title-container
+					h1.title-container__item.title Офисы свободной планировки
+					p.subtitle Выберите помещение
+
+				.catalog
+					.catalog__item
+						.product.product_opend.accordion
+							.product__header.accordion__header
+								table.product-header
+									tr.product-header__row
+										td.product-header__cell 2 этаж
+										td.product-header__cell 67 кв.м
+										td.product-header__cell 15 000 руб. кв.м/год
+										td.product-header__cell 167 000 руб./мес
+								
+							.accordion__content
+								.product__body.product-body
+									.product-body__section
+										ul.product-properties
+											li.product-properties__item
+												span.product-properties__property Планировка:
+												span.product-properties__value свободная
+											li.product-properties__item
+												span.product-properties__property Отделка:
+												span.product-properties__value без отделки
+											li.product-properties__item
+												span.product-properties__property Кондиционер:
+												span.product-properties__value есть
+											li.product-properties__item
+												span.product-properties__property Пожарная сигнализация:
+												span.product-properties__value есть
+											li.product-properties__item
+												span.product-properties__property Цена аренды за год:
+												span.product-properties__value 2 004 000 руб.
+											li.product-properties__item
+												span.product-properties__property Номер объекта:
+												span.product-properties__value 52346
+									
+									.product-body__section
+										.product-gallery
+											.product-gallery__item
+												img.product-photo(src='/assets/img/content/product-photos/product-photo-1.jpg' alt='')
+											.product-gallery__item
+												img.product-photo(src='/assets/img/content/product-photos/product-photo-2.jpg' alt='')
+											.product-gallery__item
+												img.product-photo(src='/assets/img/content/product-photos/product-photo-3.jpg' alt='')
+											.product-gallery__item
+												img.product-photo(src='/assets/img/content/product-photos/product-photo-4.jpg' alt='')
+
+								.product__footer.product-footer
+									.product-footer__section.product-footer__section_btn
+										button.button Арендовать
+									.product-footer__section
+										include ../../../../blocks/tel-num/tel-num.pug
+
+					.catalog__item
+					.catalog__item
+					.catalog__item

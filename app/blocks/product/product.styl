@@ -1,0 +1,94 @@
+.product	
+	font-size $font-size-xxxs
+	line-height $line-height-default
+	
+	color $color-default
+	background rgba($gray, 0.7)
+	
+	+above('media-m')
+		font-size $font-size-xs
+
+	+above('media-l')
+		font-size $font-size-s
+	
+	&__header
+		position relative
+		
+		padding-right $space-m
+		padding-left $space-xxxs
+		
+		&::after
+			content ''
+			
+			position absolute
+			top 50%
+			right $space-xxxs
+			
+			width $space-xxxxs
+			height $space-xxxxs
+			
+			border-right 1px solid $color-brand
+			border-bottom 1px solid $color-brand
+			
+			transform translateY(-80%) rotate(45deg)
+		
+		+above('media-m')
+			padding-right $space-xl
+			padding-left $space-xs
+			
+			&::after
+				right $space-xs
+				
+				width $space-xxxs
+				height $space-xxxs
+				
+				border-right 2px solid $color-brand
+				border-bottom 2px solid $color-brand
+		
+		+above('media-xxl')
+			padding-right $space-xxl
+			
+			&::after
+				width $space-xxs
+				height $space-xxs
+			
+	&_opend
+		background rgba($gray, 1)
+	
+	&_opend &__header
+			&::after
+				transform translateY(-20%) rotate(225deg)
+
+	&__body
+		padding $space-xs
+		padding-bottom $space-xxs
+		
+		+above('media-m')
+			padding $space-l
+			padding-bottom $space-m
+			
+		+above('media-l')
+			padding-bottom $space-l
+
+		+above('media-xl')
+			padding $space-xl
+			padding-bottom $space-xl
+	
+	&__footer
+		padding-bottom $space-xxs
+		text-align center
+		
+		+above('media-m')
+			padding-bottom $space-l
+
+		+above('media-xl')
+			padding-bottom $space-xl
+
+
+
+
+
+
+
+		
+		
