@@ -1,9 +1,13 @@
+$color-product-hover = rgba(darken($gray, 40%), 0.7)
+$color-product-active-hover = rgba(darken($gray, 50%), 0.7)
+
 .product	
 	font-size $font-size-xxxs
 	line-height $line-height-default
 	
 	color $color-default
 	background rgba($gray, 0.7)
+	transition $transition-default
 	
 	+above('media-m')
 		font-size $font-size-xs
@@ -16,6 +20,11 @@
 		
 		padding-right $space-m
 		padding-left $space-xxxs
+		
+		cursor pointer
+		
+		&:hover
+			background $color-product-hover
 		
 		&::after
 			content ''
@@ -31,6 +40,7 @@
 			border-bottom 1px solid $color-brand
 			
 			transform translateY(-80%) rotate(45deg)
+			transition $transition-default
 		
 		+above('media-m')
 			padding-right $space-xl
@@ -51,13 +61,6 @@
 			&::after
 				width $space-xxs
 				height $space-xxs
-			
-	&_opend
-		background rgba($gray, 1)
-	
-	&_opend &__header
-			&::after
-				transform translateY(-20%) rotate(225deg)
 
 	&__body
 		padding $space-xs
@@ -84,7 +87,17 @@
 		+above('media-xl')
 			padding-bottom $space-xl
 
+.product_opend
+	background rgba($gray, 0.9)
 
+.product_opend .product__header
+	background $color-product-hover
+	
+	&:hover
+		background $color-product-active-hover
+	
+	&::after
+		transform translateY(-20%) rotate(225deg)
 
 
 
