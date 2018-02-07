@@ -1,5 +1,6 @@
 // import svg4everybody from 'svg4everybody';
-// import $ from 'jquery';
+import $ from 'jquery';
+import galleryLightbox from './../blocks/gallery-lightbox/gallery-lightbox';
 import body from './../blocks/body/body';
 import mainNav from './../blocks/main-nav/main-nav';
 import mainMenu from './../blocks/main-menu/main-menu';
@@ -10,3 +11,4 @@ import product from './../blocks/product/product';
 // window.onload = () => {
 // 	svg4everybody();
 // };
+

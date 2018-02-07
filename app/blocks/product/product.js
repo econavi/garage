@@ -1,7 +1,5 @@
 var productHeaderList = document.querySelectorAll('.product__header');
 
-console.log('productHeaderList')
-
 for(var i = 0; i < productHeaderList.length; i++) {
 	var productHeaderItem = productHeaderList[i];
 	productHeaderItem.addEventListener('click', hundler);
