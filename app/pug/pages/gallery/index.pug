@@ -1,0 +1,51 @@
+extends ../../templates/default/template.pug
+
+block head
+	- var path = '../';
+	- var pageTitle = 'Галерея';
+	- var pageDescription = 'Фотографии наших помещений';
+
+block content
+	main.content
+		.content__item
+			.container
+				.title-container
+					h1.title-container__item.title Фотографии наших помещений
+
+				ul.gallery.gallery-lightbox
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-1.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-1.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-2.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-2.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-3.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-3.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-4.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-4.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-4.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-4.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-1.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-1.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-1.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-1.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-2.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-2.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-3.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-3.jpg' alt='')
+					li.gallery__item
+						a.gallery__link(href='/assets/img/content/gallery/pic-4.jpg')
+							img.gallery__pic(src='/assets/img/content/gallery/pic-4.jpg' alt='')
+
+		.content__item.text-container
+			.container
+				p.text Бизнес-центр &laquo;Алексеевская Башня&raquo;&nbsp;&mdash; новое офисное здание класса &laquo;В+&raquo; общей площадью 41&nbsp;380&nbsp;м2, расположенное в&nbsp;Северо-Восточном округе Москвы. Значительная часть здания представляет собой &laquo;сегмент круга&raquo; и&nbsp;имеет панорамные окна, открывающие восхитительный вид на&nbsp;Всероссийский Выставочный Центр.
+
+				p.text Останкинскую башню, гостиницу &laquo;Космос&raquo;. Надземная часть здания представляет собой композицию из&nbsp;башни, расположенной на&nbsp;3-х этажном стилобате. Этажность здания&nbsp;&mdash; 18&nbsp;надземных этажей и&nbsp;4&nbsp;подземных этажа.
