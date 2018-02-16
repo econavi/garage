@@ -1,0 +1,199 @@
+$modal-background = $color-primary
+
+.modal
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
+	z-index 1000
+	
+	background rgba(0,0,0,0.95)
+	
+	overflow auto
+	-webkit-overflow-scrolling touch
+	
+	animation show-modal 0.3s
+	
+	&_isClosed 
+		display none
+	
+	
+	&__inner
+		position relative
+		
+		width 90%
+		max-width 800px
+		margin 10% auto
+	
+	&__content
+		padding 5%
+		padding-top $space-l
+		padding-bottom $space-l
+		
+		border-radius 10px
+		background $modal-background
+		box-shadow 0 0 10px $color-default
+		
+	&__close-btn
+		position absolute
+		top 0
+		right 0
+		z-index 2000
+
+		width $space-l
+		height $space-l
+		
+		background none
+		border none
+		
+		&::before,
+		&::after
+			content ''
+			position absolute
+			top 50%
+			left 50%
+			
+			width 20px
+			height 2px
+			
+			background gray
+		
+		&::before
+			transform translate(-50%, -50%) rotate(-45deg)
+		
+		&::after
+			transform translate(-50%, -50%) rotate(45deg)
+		
+		&:hover::before,
+		&:hover::after
+			background #fff
+
+.js-body-not-scroll 
+	overflow hidden
+
+@keyframes show-modal {
+  from {
+    transform: translateY(-100%)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $modal-background = $color-primary
+
+// .modal
+// 	position fixed
+// 	top 0
+// 	right 0
+// 	bottom 0
+// 	left 0
+// 	z-index 1000
+	
+// 	background rgba(0,0,0,0.9)
+	
+// 	&_isClosed 
+// 		display none
+	
+	
+// 	&__inner
+// 		position fixed
+// 		top 50%
+// 		left 50%
+
+// 		width 90vw
+// 		max-width 800px
+
+// 		height 120vw
+// 		max-height 80vh
+		
+// 		border-radius 2px
+// 		background $modal-background
+// 		box-shadow 0 0 10px #fff
+
+// 		transform translate(-50%, -50%)
+	
+// 	&__content
+// 		position absolute
+// 		top 0
+// 		left 0
+
+// 		display flex
+// 		flex-direction column
+		
+// 		width 100%
+// 		height 100%
+// 		padding 5%
+// 		padding-top 40px
+// 		box-sizing border-box
+
+// 		overflow auto
+		
+// 	&__close-btn
+// 		position fixed
+// 		top 0
+// 		right 0
+// 		z-index 1000
+
+// 		width 40px
+// 		height 40px
+		
+// 		background none
+// 		border none
+		
+// 		&::before,
+// 		&::after
+// 			content ''
+// 			position absolute
+// 			top 50%
+// 			left 50%
+			
+// 			width 20px
+// 			height 2px
+			
+// 			background gray
+		
+// 		&::before
+// 			transform translate(-50%, -50%) rotate(-45deg)
+		
+// 		&::after
+// 			transform translate(-50%, -50%) rotate(45deg)
+		
+// 		&:hover::before,
+// 		&:hover::after
+// 			background #5e5e5e
+
+// .js-body-not-scroll 
+// 	overflow hidden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

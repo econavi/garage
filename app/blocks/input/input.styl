@@ -1,0 +1,24 @@
+$color-input-text = $color-default
+$color-input-border = $color-default
+$color-input-text-placeholder = rgba($color-default, 0.5)
+
+.input
+	width 100%
+	padding $space-xxxxs
+	
+	font-size $font-size-xxs
+	line-height $line-height-default-xx
+	text-align center
+	
+	color $color-input-text
+	background none
+	border 2px solid $color-input-border
+	border-radius 0
+	
+	resize none
+	
+	&::placeholder
+		color $color-input-text-placeholder
+	
+	&:focus::placeholder
+		color transparent

@@ -60,7 +60,7 @@ block content
 
 								.product__footer.product-footer
 									.product-footer__section.product-footer__section_btn
-										button.button Арендовать
+										button.button.js-modal-trigger Арендовать
 									.product-footer__section
 										include ../../../../blocks/tel-num/tel-num.pug
 
@@ -110,7 +110,7 @@ block content
 
 								.product__footer.product-footer
 									.product-footer__section.product-footer__section_btn
-										button.button Арендовать
+										button.button.js-modal-trigger Арендовать
 									.product-footer__section
 										include ../../../../blocks/tel-num/tel-num.pug
 
@@ -160,7 +160,7 @@ block content
 
 								.product__footer.product-footer
 									.product-footer__section.product-footer__section_btn
-										button.button Арендовать
+										button.button.js-modal-trigger Арендовать
 									.product-footer__section
 										include ../../../../blocks/tel-num/tel-num.pug
 
@@ -210,7 +210,7 @@ block content
 
 								.product__footer.product-footer
 									.product-footer__section.product-footer__section_btn
-										button.button Арендовать
+										button.button.js-modal-trigger Арендовать
 									.product-footer__section
 										include ../../../../blocks/tel-num/tel-num.pug
 
@@ -260,6 +260,17 @@ block content
 
 								.product__footer.product-footer
 									.product-footer__section.product-footer__section_btn
-										button.button Арендовать
+										button.button.js-modal-trigger Арендовать
 									.product-footer__section
 										include ../../../../blocks/tel-num/tel-num.pug
+	
+	.modal.modal_isClosed
+		.modal__inner
+			.modal__close-btn
+			.modal__content
+				.title-container
+					.title-container__item
+						.title Заполните форму
+					.title-container__item
+						.subtitle Менеджер перезвонит в рабочее время
+				include ../../../../blocks/order-form/order-form.pug
