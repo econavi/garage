@@ -1,0 +1,37 @@
+extends ../../templates/default/template.pug
+
+block head
+	- var path = '../';
+	- var pageTitle = 'О нас';
+	- var pageDescription = 'Информация о нашей компании';
+
+block content
+	main.content
+		.content__item
+			.container
+				.title-container
+					h1.title-container__item.title Контакты и реквизиты
+
+		.content__item.text-container
+			.container
+				p.text
+					|<b>Телефоны:</b>
+					<br>
+					include ../../../blocks/tel-num/tel-num.pug
+					include ../../../blocks/tel-num/tel-num2.pug
+					<br>
+					
+					|<b>Адрес:</b>
+					<br>
+					include ../../../blocks/address/address.pug
+					<br>
+					<br>
+
+					|<b>Реквизиты:</b>
+					<br>
+					|Публичное акционерное общество «Сбербанк России» <br>
+					|Кор. счет 30101810400000000225 <br>
+					|БИК 044525225 <br>
+					|КПП 773601001 <br>
+					|ИНН 7707083893 <br>
+					|ОГРН 1027700132195
