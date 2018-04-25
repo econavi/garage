@@ -32,7 +32,7 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/econavi/project-template.git project-name
+$ git clone https://github.com/econavi/garage.git project-name
 $ cd project-name
 $ npm install
 ```
